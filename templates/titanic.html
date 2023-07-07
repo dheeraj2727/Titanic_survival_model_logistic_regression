@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction of Survivals on TITANIC</title>
+</head>
+
+<body style="background-color: rgb(99, 117, 104);">
+    <img src="Gradient_Descent_Img.png" alt="Trulli" width="500" height="333">
+
+    <h1> Prediction of Survivals on TITANIC </h1>
+    <form method="GET" action="/predict_survival">
+
+        <label>Pclass:</label>
+        <input type = "text" name = "Pclass">
+        </select>
+
+        <br>
+        <br>
+        <label>Gender:</label>
+        <select name = "Gender">
+            <option value = "male">Male</option>
+            <option value = "female">Female</option>
+        </select>
+
+        <br>
+        <br>
+    
+        <label>Age:</label>
+        <input type = "text" name = "Age">
+        </select>
+
+        <br>
+        <br>
+
+        <label>SibSp:</label>
+        <input type = "text" name = "SibSp">
+        </select>
+        
+        <br>
+        <br>
+
+        <label>Parch:</label>
+        <input type = "text" name = "Parch">
+        </select>
+        
+        <br>
+        <br>
+
+        <label>Fare:</label>
+        <input type = "text" name = "Fare">
+        </select>
+        
+        <br>
+        <br>
+
+        <label>Embarked:</label>
+        <select name = "Embarked">
+            <option value = "S">S</option>
+            <option value = "C">C</option>
+            <option value = "Q">Q</option>
+        </select>
+
+        <br>
+        <br>
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <h4><strong> This Passenger survival status: <b> {{ prediction }} </b> </strong></h4>
+
+
+    </form>
+
+
+</body>
+</html>
